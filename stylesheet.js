@@ -1,16 +1,5 @@
-import React, { Component } from 'react';
-import { AppRegistry , StyleSheet, Text, View, Image, TextInput } from 'react-native';
-class LoginForm extends Component{
-    render() {
-      return(
-        <View style={styles.form}>
-          <TextInput placeholder="  username or email" placeholderTextColor="white" underlineColorAndroid='transparent' style={styles.input} />
-          <TextInput placeholder="  password" placeholderTextColor="white" underlineColorAndroid='transparent' style={styles.input} />
-  
-        </View>    
-      );
-    }
-  }
+
+import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
@@ -47,7 +36,6 @@ const styles = StyleSheet.create({
     
     },
   
-  });
-  
+});
 
- export default LoginForm;
+module.exports = styles;
