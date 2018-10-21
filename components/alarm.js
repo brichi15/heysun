@@ -89,8 +89,8 @@ export default class Alarm extends Component<{}>
                     <Text style = { styles.timeText }>{ this.state.currentTime }</Text>          
                 </View>
                 <View style={styles.setAlarmText}> 
-                    <Text style={styles.h0} >Set Alarm</Text>
-                    <Text style={styles.hourMinSec}>Hour               Minute             Second</Text>
+                    <Text style={styles.h0} >Create Alarm</Text>
+                    <Text style={styles.hourMinSec}>Hour          Minute        Second         AM/PM</Text>
                 </View>
                 <View style={styles.setAlarmDrop}>
                     <Picker
@@ -243,6 +243,14 @@ export default class Alarm extends Component<{}>
                     <Picker.Item label="57" value="57" />
                     <Picker.Item label="58" value="58" />
                     <Picker.Item label="59" value="59" />
+                    </Picker>
+
+                    <Picker
+                    selectedValue={this.state.ampm}
+                    style={styles.timePick}
+                    onValueChange={(itemValue, itemIndex) => this.setState({ampm: itemValue})}>
+                    <Picker.Item label="am" value="am" />
+                    <Picker.Item label="pm" value="pm" />
                     </Picker>
                 </View>
             <Button OnPress = {this.setState({ alarmTime: this.state.hourPick + ':' + this.state.minutePick + ':' + this.state.secondsPick + ' ' + am_pm });} >
