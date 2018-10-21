@@ -3,7 +3,6 @@ import { StyleSheet, Platform } from 'react-native';
 
 const styles = StyleSheet.create({      ///standard
     container: {
-      flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
       backgroundColor: '#a96afb',
@@ -27,7 +26,7 @@ const styles = StyleSheet.create({      ///standard
       fontSize: 18,
       textAlign: 'center',
       opacity: 0.9,
-      width: 180,
+      width: 300,
       
     },
     logoContainer: {              ///logo
@@ -39,18 +38,24 @@ const styles = StyleSheet.create({      ///standard
       width: 120,
       height: 120
     },
+
+    formContainer: {
+
+    },
+    
     formIn: {                       ///login
       flexDirection: 'column',
-      paddingHorizontal: 20
+      paddingHorizontal: 0
     },
     formButton: {
       flexDirection: 'row',
-      paddingHorizontal: 20
+      paddingHorizontal: 0
      
     },
     input: {
       height: 40,
       backgroundColor: 'rgba(225,225,225,0.4)',
+      width: '100%',
       color: '#fff',
       fontSize: 18,
       marginBottom: 20,

@@ -12,8 +12,9 @@ class Login extends Component{
           
           <View style={styles.logoContainer}>
             <Text style={styles.title}>HeySun</Text>
-            <Image style={styles.logo} source={require('../assets/bed.png')}/>
-            <Text style={styles.h1}>A social alarm clock rewards system</Text>
+              <Image style={styles.logo} source={require('../assets/bed.png')}/>
+            <Text style={styles.h1}>A social alarm clock</Text>
+            <Text style={styles.h1}>rewards system</Text>
           </View>
 
   
