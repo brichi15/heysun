@@ -89,18 +89,14 @@ export default class Alarm extends Component<{}>
                     <Text style = { styles.timeText }>{ this.state.currentTime }</Text>          
                 </View>
                 <View style={styles.setAlarmText}> 
-                    <Text style={styles.h0} >Set Alarm</Text>
-                    <Text style={styles.hourMinSec}>Hour               Minute             Second</Text>
+                    <Text style={styles.h0} >Create Alarm</Text>
+                    <Text style={styles.hourMinSec}>Hour          Minute        Second         AM/PM</Text>
                 </View>
                 <View style={styles.setAlarmDrop}>
                     <Picker
                     selectedValue={this.state.hour}
                     style={styles.timePick}
-<<<<<<< HEAD
                     onValueChange={(itemValue, itemIndex) => this.setState({hour: itemValue})}>
-=======
-                    onValueChange={(itemValue,ahour) => this.setState({language: itemValue})}>
->>>>>>> 7f133984af8045ae6ba9e058c727de86a58adf40
                     <Picker.Item label="1" value="1" />
                     <Picker.Item label="2" value="2" />
                     <Picker.Item label="3" value="3" />
@@ -118,11 +114,7 @@ export default class Alarm extends Component<{}>
                     <Picker
                     selectedValue={this.state.minute}
                     style={styles.timePick}
-<<<<<<< HEAD
                     onValueChange={(itemValue, itemIndex) => this.setState({minute: itemValue})}>
-=======
-                    onValueChange={(itemValue,amin) => this.setState({language: itemValue})}>
->>>>>>> 7f133984af8045ae6ba9e058c727de86a58adf40
                     <Picker.Item label="0" value="0" />
                     <Picker.Item label="1" value="1" />
                     <Picker.Item label="2" value="2" />
@@ -189,11 +181,7 @@ export default class Alarm extends Component<{}>
                     <Picker
                     selectedValue={this.state.second}
                     style={styles.timePick}
-<<<<<<< HEAD
                     onValueChange={(itemValue, itemIndex) => this.setState({second: itemValue})}>
-=======
-                    onValueChange={(itemValue,asec) => this.setState({language: itemValue})}>
->>>>>>> 7f133984af8045ae6ba9e058c727de86a58adf40
                     <Picker.Item label="0" value="0" />
                     <Picker.Item label="1" value="1" />
                     <Picker.Item label="2" value="2" />
@@ -255,6 +243,14 @@ export default class Alarm extends Component<{}>
                     <Picker.Item label="57" value="57" />
                     <Picker.Item label="58" value="58" />
                     <Picker.Item label="59" value="59" />
+                    </Picker>
+
+                    <Picker
+                    selectedValue={this.state.ampm}
+                    style={styles.timePick}
+                    onValueChange={(itemValue, itemIndex) => this.setState({ampm: itemValue})}>
+                    <Picker.Item label="am" value="am" />
+                    <Picker.Item label="pm" value="pm" />
                     </Picker>
                 </View>
 
