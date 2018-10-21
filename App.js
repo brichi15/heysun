@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { AppRegistry , StyleSheet, Text, View, Image, TextInput } from 'react-native';
+import { AppRegistry } from 'react-native';
 import Splash from './components/Splash'
 import Login from './components/Login'
 import styles from './stylesheet'
