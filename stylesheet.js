@@ -14,12 +14,21 @@ const styles = StyleSheet.create({      ///standard
       fontWeight: 'bold',
       fontSize: 60,
     },
+    h0: {
+      color: '#fff',
+      fontSize: 20,
+      textAlign: 'center',
+      opacity: 0.9,
+      width: 180,
+      padding: 10,
+    },
     h1: {
       color: '#fff',
       fontSize: 18,
       textAlign: 'center',
       opacity: 0.9,
-      width: 180
+      width: 180,
+      
     },
     logoContainer: {              ///logo
       alignItems: 'center',
@@ -86,8 +95,7 @@ const styles = StyleSheet.create({      ///standard
     daysText:
     {
         color: '#fff',
-        fontSize: 25,
-        paddingBottom: 0, 
+        fontSize: 25, 
 
     },
 
@@ -95,14 +103,38 @@ const styles = StyleSheet.create({      ///standard
       backgroundColor: '#a96afb',
       flex: 1,
       paddingTop: (Platform.OS == 'ios') ? 20 : 0,
-      justifyContent: 'center',
     },
 
     alarmText: {
       alignItems: 'center',
-    }
+      paddingTop: 30,
+    },
+    setAlarmText: {
+      alignItems: 'center',
+      paddingTop: 12,
+    },
 
+    setAlarmDrop: {
+      flex: 1,
+      flexDirection: 'row',
+      paddingHorizontal: 5,
+    },
 
+    timePick: {
+      flex: 1,
+      height: 30,
+      color: '#fff',
+      padding: 10,
+      
+    },
+
+    hourMinSec: {
+      color: '#fff',
+      fontSize: 18,
+
+    },
+
+  
 });
 
 module.exports = styles;
