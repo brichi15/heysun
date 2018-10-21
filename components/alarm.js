@@ -78,7 +78,9 @@ export default class Alarm extends Component<{}>
 
     render()
     {
-          
+        var ahour = 0;
+        var amin = -1;
+        var asec = -1; 
         return(
             <View style = { styles.alarmContainer }>
             <StatusBar hidden/>
@@ -94,7 +96,7 @@ export default class Alarm extends Component<{}>
                     <Picker
                     selectedValue={this.state.language}
                     style={styles.timePick}
-                    onValueChange={(itemValue, itemIndex) => this.setState({language: itemValue})}>
+                    onValueChange={(itemValue,ahour) => this.setState({language: itemValue})}>
                     <Picker.Item label="1" value="1" />
                     <Picker.Item label="2" value="2" />
                     <Picker.Item label="3" value="3" />
@@ -112,7 +114,7 @@ export default class Alarm extends Component<{}>
                     <Picker
                     selectedValue={this.state.language}
                     style={styles.timePick}
-                    onValueChange={(itemValue, itemIndex) => this.setState({language: itemValue})}>
+                    onValueChange={(itemValue,amin) => this.setState({language: itemValue})}>
                     <Picker.Item label="0" value="0" />
                     <Picker.Item label="1" value="1" />
                     <Picker.Item label="2" value="2" />
@@ -179,7 +181,7 @@ export default class Alarm extends Component<{}>
                     <Picker
                     selectedValue={this.state.language}
                     style={styles.timePick}
-                    onValueChange={(itemValue, itemIndex) => this.setState({language: itemValue})}>
+                    onValueChange={(itemValue,asec) => this.setState({language: itemValue})}>
                     <Picker.Item label="0" value="0" />
                     <Picker.Item label="1" value="1" />
                     <Picker.Item label="2" value="2" />
