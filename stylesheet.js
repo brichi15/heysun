@@ -5,9 +5,9 @@ const styles = StyleSheet.create({      ///standard
     container: {
       flex: 1,
       justifyContent: 'center',
-      //alignItems: 'center',
+      alignItems: 'center',
       backgroundColor: '#a96afb',
-      paddingTop: (Platform.OS == 'ios') ? 20 : 0
+      
   },
     title: {
       color: '#fff',
@@ -80,16 +80,31 @@ const styles = StyleSheet.create({      ///standard
     timeText:
     {
         fontSize: 50,
-        color: '#fff'
+        color: '#fff',
+        textAlign: 'left', 
     },
 
     daysText:
     {
         color: '#fff',
         fontSize: 25,
-        paddingBottom: 0
+        paddingBottom: 0,
+        textAlign: 'left', 
+
+    },
+
+    alarmContainer: {
+      backgroundColor: '#a96afb',
+      flex: 1,
+      paddingTop: (Platform.OS == 'ios') ? 20 : 0,
+      justifyContent: 'center',
+    },
+
+    alarmText: {
+      alignItems: 'center',
     }
-  
+
+
 });
 
 module.exports = styles;

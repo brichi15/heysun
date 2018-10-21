@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { View, Text, StyleSheet, Platform } from 'react-native';
+import styles from '../stylesheet';
 
 export default class Alarm extends Component<{}>
 {
@@ -76,8 +77,8 @@ export default class Alarm extends Component<{}>
     render()
     {
         return(
-            <View style = { styles.container }>
-                <View>
+            <View style = { styles.alarmContainer }>
+                <View style={styles.alarmText}>
                     <Text style = { styles.daysText }>{ this.state.currentDay }</Text>
                     <Text style = { styles.timeText }>{ this.state.currentTime }</Text>                    
                 </View>
@@ -85,28 +86,3 @@ export default class Alarm extends Component<{}>
         );
     }
 }
-
-const styles = StyleSheet.create(
-{
-    container:
-    {
-        flex: 1,
-        justifyContent: 'center',
-        //alignItems: 'center',
-        backgroundColor: '#a96afb',
-        paddingTop: (Platform.OS == 'ios') ? 20 : 0
-    },
-
-    timeText:
-    {
-        fontSize: 50,
-        color: '#fff'
-    },
-
-    daysText:
-    {
-        color: '#fff',
-        fontSize: 25,
-        paddingBottom: 0
-    }
-});
