@@ -1,14 +1,8 @@
 
 import { StyleSheet, Platform } from 'react-native';
 
-<<<<<<< HEAD
 const styles = StyleSheet.create({      ///standard
     container: {
-=======
-const styles = StyleSheet.create({
-  container:
-    {
->>>>>>> 203ead1c7dccd8980f9db5c583f936d700492278
       flex: 1,
       justifyContent: 'center',
       //alignItems: 'center',
