@@ -1,11 +1,15 @@
 
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Platform } from 'react-native';
 
 const styles = StyleSheet.create({
-    container: {
+  container:
+    {
       flex: 1,
+      justifyContent: 'center',
+      //alignItems: 'center',
       backgroundColor: '#a96afb',
-    },
+      paddingTop: (Platform.OS == 'ios') ? 20 : 0
+  },
     title: {
       color: '#fff',
       fontWeight: 'bold',
@@ -72,6 +76,19 @@ const styles = StyleSheet.create({
       textAlign: 'center',
       color: '#a96afb',
       fontSize: 16,
+    }, 
+
+    timeText:
+    {
+        fontSize: 50,
+        color: '#fff'
+    },
+
+    daysText:
+    {
+        color: '#fff',
+        fontSize: 25,
+        paddingBottom: 0
     }
   
 });
