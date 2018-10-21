@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Text, View, Image, KeyboardAvoidingView, StatusBar} from 'react-native';
+import { createStackNavigator } from 'react-navigation';
 import LoginForm from './LoginForm'
 import styles from '../stylesheet'
 

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Text, View, Image, StatusBar } from 'react-native';
+import { createStackNavigator } from 'react-navigation';
 import styles from '../stylesheet'
 
 class Splash extends Component {
@@ -12,9 +13,11 @@ class Splash extends Component {
             <Image style={styles.logo} source={require('../assets/bed.png')}/>
           </View>
         </View>
+
       );
     }
   
-  }
+}
+
 
   export default Splash;

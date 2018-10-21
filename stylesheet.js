@@ -1,7 +1,7 @@
 
 import { StyleSheet } from 'react-native';
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create({      ///standard
     container: {
       flex: 1,
       backgroundColor: '#a96afb',
@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
       opacity: 0.9,
       width: 180
     },
-    logoContainer: {
+    logoContainer: {              ///logo
       alignItems: 'center',
       flexGrow: 1,
       justifyContent: 'center'
@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
       width: 120,
       height: 120
     },
-    formIn: {
+    formIn: {                       ///login
       flexDirection: 'column',
       paddingHorizontal: 20
     },
