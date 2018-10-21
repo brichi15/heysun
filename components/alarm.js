@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { View, Text, StyleSheet, Platform, StatusBar, Picker } from 'react-native';
 import styles from '../stylesheet';
 
+
 export default class Alarm extends Component<{}>
 {
     constructor()

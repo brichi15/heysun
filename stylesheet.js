@@ -1,4 +1,4 @@
-
+import React, { Component } from 'react';
 import { StyleSheet, Platform } from 'react-native';
 
 const styles = StyleSheet.create({      ///standard
@@ -128,7 +128,6 @@ const styles = StyleSheet.create({      ///standard
     timePick: {
       flex: 1,
       height: 30,
-      color: '#fff',
       padding: 10,
       
     },
