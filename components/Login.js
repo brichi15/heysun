@@ -8,18 +8,16 @@ class Login extends Component{
     render() {
       return(
         
-        <KeyboardAvoidingView behavior='padding' style={styles.container}>
-          <StatusBar hidden/>
+        
+          
           <View style={styles.logoContainer}>
             <Text style={styles.title}>HeySun</Text>
             <Image style={styles.logo} source={require('../assets/bed.png')}/>
             <Text style={styles.h1}>A social alarm clock rewards system</Text>
           </View>
-          <View style={styles.formContainer}>
-            <LoginForm></LoginForm>
-          </View>
+
   
-        </KeyboardAvoidingView>
+   
       );
     }
   

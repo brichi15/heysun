@@ -1,10 +1,21 @@
 import React, { Component } from 'react';
-import { AppRegistry , StyleSheet, Text, View, TouchableOpacity, TextInput } from 'react-native';
+import { AppRegistry , StyleSheet, Text, View, TouchableOpacity, KeyboardAvoidingView, TextInput, Image } from 'react-native';
 import styles from '../stylesheet'
+import Alarm from './alarm'
+import App from '../App'
+import Login from './Login'
 
 class LoginForm extends Component {
+  onPress = () => {
+    global.clockFlag = 1;
+    this.forceUpdate();
+  }
     render() {
-      return(
+      if(global.clockFlag == 0){
+      return( 
+        <KeyboardAvoidingView behavior='padding' style={styles.container}>
+        <View>
+        <Login /> 
         <View>
             <View style={styles.formIn}>
             <TextInput 
@@ -32,18 +43,28 @@ class LoginForm extends Component {
 
 
             <View style={styles.formButton}>
-            <TouchableOpacity style={styles.buttonSignup}>
-              <Text style={styles.login}>SIGN UP</Text>
+            <TouchableOpacity style={styles.buttonSignup}
+             onPress={this.onPress}>
+              <Text style={styles.login}>SIGN UP
+             </Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.buttonLogin}>
               <Text style={styles.login}>LOGIN</Text>
             </TouchableOpacity>
             </View>
           </View>
-      );
+          </View>
+          </KeyboardAvoidingView>
+
+      );}
+      if(global.clockFlag == 1){
+        return(
+            <Alarm />
+        );
     }
   }
+}
 
-  
+
 
  export default LoginForm;

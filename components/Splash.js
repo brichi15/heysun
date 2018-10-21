@@ -4,6 +4,7 @@ import { createStackNavigator } from 'react-navigation';
 import styles from '../stylesheet'
 
 class Splash extends Component {
+
     render() {
       return (
         <View style={styles.container}>

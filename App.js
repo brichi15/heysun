@@ -5,17 +5,23 @@ import Splash from './components/Splash'
 import Login from './components/Login'
 import Alarm from './components/alarm'
 import styles from './stylesheet'
+import LoginForm from './components/LoginForm'
 
 
 export default class App extends Component {
+  constructor(){
+    super();
+    Load.load(v => this.setState({loaded: true}));
+  }
   
   render() {
     return(
-    <Alarm />
+      <LoginForm />
     );
   }
-
 }
+
+
 
 
 const AppStack = createStackNavigator({
