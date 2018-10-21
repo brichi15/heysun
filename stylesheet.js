@@ -1,11 +1,20 @@
 
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Platform } from 'react-native';
 
+<<<<<<< HEAD
 const styles = StyleSheet.create({      ///standard
     container: {
+=======
+const styles = StyleSheet.create({
+  container:
+    {
+>>>>>>> 203ead1c7dccd8980f9db5c583f936d700492278
       flex: 1,
+      justifyContent: 'center',
+      //alignItems: 'center',
       backgroundColor: '#a96afb',
-    },
+      paddingTop: (Platform.OS == 'ios') ? 20 : 0
+  },
     title: {
       color: '#fff',
       fontWeight: 'bold',
@@ -72,6 +81,19 @@ const styles = StyleSheet.create({      ///standard
       textAlign: 'center',
       color: '#a96afb',
       fontSize: 16,
+    }, 
+
+    timeText:
+    {
+        fontSize: 50,
+        color: '#fff'
+    },
+
+    daysText:
+    {
+        color: '#fff',
+        fontSize: 25,
+        paddingBottom: 0
     }
   
 });
