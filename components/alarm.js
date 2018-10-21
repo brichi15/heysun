@@ -94,13 +94,9 @@ export default class Alarm extends Component<{}>
                 </View>
                 <View style={styles.setAlarmDrop}>
                     <Picker
-                    selectedValue={this.state.hour}
+                    selectedValue={this.state.hourPick}
                     style={styles.timePick}
-<<<<<<< HEAD
-                    onValueChange={(itemValue, itemIndex) => this.setState({hour: itemValue})}>
-=======
-                    onValueChange={(itemValue,ahour) => this.setState({language: itemValue})}>
->>>>>>> 7f133984af8045ae6ba9e058c727de86a58adf40
+                    onValueChange={(itemValue, itemIndex) => this.setState({hourPick: itemValue})}>
                     <Picker.Item label="1" value="1" />
                     <Picker.Item label="2" value="2" />
                     <Picker.Item label="3" value="3" />
@@ -116,13 +112,9 @@ export default class Alarm extends Component<{}>
                     </Picker>
 
                     <Picker
-                    selectedValue={this.state.minute}
+                    selectedValue={this.state.minutePick}
                     style={styles.timePick}
-<<<<<<< HEAD
-                    onValueChange={(itemValue, itemIndex) => this.setState({minute: itemValue})}>
-=======
-                    onValueChange={(itemValue,amin) => this.setState({language: itemValue})}>
->>>>>>> 7f133984af8045ae6ba9e058c727de86a58adf40
+                    onValueChange={(itemValue, itemIndex) => this.setState({minutePick: itemValue})}>
                     <Picker.Item label="0" value="0" />
                     <Picker.Item label="1" value="1" />
                     <Picker.Item label="2" value="2" />
@@ -187,13 +179,9 @@ export default class Alarm extends Component<{}>
                     </Picker>
 
                     <Picker
-                    selectedValue={this.state.second}
+                    selectedValue={this.state.secondPick}
                     style={styles.timePick}
-<<<<<<< HEAD
-                    onValueChange={(itemValue, itemIndex) => this.setState({second: itemValue})}>
-=======
-                    onValueChange={(itemValue,asec) => this.setState({language: itemValue})}>
->>>>>>> 7f133984af8045ae6ba9e058c727de86a58adf40
+                    onValueChange={(itemValue, itemIndex) => this.setState({secondPick: itemValue})}>
                     <Picker.Item label="0" value="0" />
                     <Picker.Item label="1" value="1" />
                     <Picker.Item label="2" value="2" />
