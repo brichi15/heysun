@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text, StyleSheet, Platform, StatusBar, Picker } from 'react-native';
+import { View, Text, StyleSheet, Platform, StatusBar, Picker , Button} from 'react-native';
 import styles from '../stylesheet';
 
 
@@ -254,7 +254,7 @@ export default class Alarm extends Component<{}>
                     <Picker.Item label="pm" value="pm" />
                     </Picker>
                 </View>
-
+            <Button OnPress = {this.setState({ alarmTime: this.state.hourPick + ':' + this.state.minutePick + ':' + this.state.secondsPick + ' ' + am_pm });} >
             </View>
         );
     }
