@@ -81,15 +81,13 @@ const styles = StyleSheet.create({      ///standard
     {
         fontSize: 50,
         color: '#fff',
-        textAlign: 'left', 
     },
 
     daysText:
     {
         color: '#fff',
         fontSize: 25,
-        paddingBottom: 0,
-        textAlign: 'left', 
+        paddingBottom: 0, 
 
     },
 
