@@ -11,7 +11,7 @@ import LoginForm from './components/LoginForm'
 export default class App extends Component {
   constructor(){
     super();
-    Load.load(v => this.setState({loaded: true}));
+    global.clockFlag = 0;
   }
   
   render() {
